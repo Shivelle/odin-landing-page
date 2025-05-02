@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font-family: 'Roboto', sans-serif;
+  --section-background-color-dark: #1F2937;
+  --color-muted-dark: #1F2937;
+  --link-color: #E5E7EB;
+  --footer-secondary-color: #E5E7EB;
+  --action-color: #3882F6;
+  --container-max-width: 1200px;
+  --section-padding: 2rem;
+  --font-size: 16px;
+  --hero-secondary-text-font-size: 18px;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:focus,
+a:visited {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.button {
+  --button-border-radius: 0.5rem;
+  --button-padding: 0.5rem 1.5rem;
+  --button-color: #F9FAF8;
+
+  background-color: var(--action-color);
+  color: var(--button-color);
+  border: 1px solid var(--action-color);
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding);
+  cursor: pointer;
+}
+
+.section {
+  --padding: var(--section-padding);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--padding);
+}
+
+.navbar,
+.section-hero,
+footer {
+  background-color: var(--section-background-color-dark);
+}
+
+/* Header */
+header {
+  --header-logo-color: #F9FAF8;
+  --header-secondary-text-color: #E5E7EB;
+  --header-logo-font-size: 24px;
+  --navbar-link-gap: 0.5rem;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+}
+
+.navbar a {
+  color: var(--header-secondary-text-color);
+  font-size: var(--header-secondary-font-size);
+  padding: var(--navbar-link-gap);
+}
+
+.navbar .logo {
+  color: var(--header-logo-color);
+  font-size: var(--header-logo-font-size);
+}
+
+.navbar .navbar-links {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Hero Section */
+
+/* Features Section */
+
+/* Quote Section */
+
+/* CTA Section */
+.section-cta {
+  --section-cta-text-color: #E5E7EB;
+  --section-cta-border-radius: 0.5rem;
+  --section-cta-margin: 4rem auto;
+}
+
+.section-cta .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: var(--section-cta-border-radius);
+  padding: var(--section-padding);
+  background-color: var(--action-color);
+  color: var(--section-cta-text-color);
+  margin: var(--section-cta-margin);
+}
+
+.section-cta .button {
+  background-color: transparent;
+  border: 1px solid var(--button-color);
+}
+
+/* Footer */
+footer {
+  color: var(--footer-secondary-color);
+  text-align: center;
+  padding: var(--section-padding)
+}
