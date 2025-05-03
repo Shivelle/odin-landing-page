@@ -88,6 +88,17 @@ header {
 }
 
 /* Hero Section */
+.section-hero {
+  --hero-secondary-text-color: #E5E7EB;
+}
+.section-hero .container {
+  display: flex;
+}
+
+.hero-left p {
+  color: var(--hero-secondary-text-color);
+  font-size: var(--hero-secondary-text-font-size);
+}
 
 /* Features Section */
 
