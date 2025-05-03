@@ -103,6 +103,24 @@ header {
 /* Features Section */
 
 /* Quote Section */
+.section-quote {
+  --section-quote-background-color: #E5E7EB;
+  --section-quote-text-color: #1f2937;
+  --section-quote-font-size: 36px;
+
+  color: var(--section-quote-text-color);
+  background-color: var(--section-quote-background-color);
+}
+
+.section-quote .quote {
+  font-size: var(--section-quote-font-size);
+  font-weight: light;
+  font-style: italic;
+}
+
+.section-quote .author {
+  text-align: right;
+}
 
 /* CTA Section */
 .section-cta {
