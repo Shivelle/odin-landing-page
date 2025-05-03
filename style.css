@@ -101,6 +101,51 @@ header {
 }
 
 /* Features Section */
+.section-features {
+  --section-features-text-color: #1f2937;
+  --section-features-font-size: 24px;
+  --section-features-box-border: 2px solid var(--action-color);
+  --section-features-box-border-radius: 0.5rem;
+  --section-features-box-size: 200px;
+}
+
+.section-features .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.section-features .features-title {
+  text-align: center;
+}
+
+.section-features .feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.section-features .feature-grid .feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-features .feature-grid .feature p {
+  max-width: var(--section-features-box-size);
+}
+
+.section-features .feature-box {
+  color: var(--section-features-text-color);
+  border: var(--section-features-box-border);
+  border-radius: var(--section-features-box-border-radius);
+  width: var(--section-features-box-size);
+  height: var(--section-features-box-size);
+}
 
 /* Quote Section */
 .section-quote {
