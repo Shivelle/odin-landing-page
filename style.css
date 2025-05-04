@@ -90,14 +90,29 @@ header {
 /* Hero Section */
 .section-hero {
   --hero-secondary-text-color: #E5E7EB;
-}
-.section-hero .container {
-  display: flex;
+  --hero-primary-heading-color: #F9FAF8;
 }
 
-.hero-left p {
+.section-hero .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.section-hero .hero-left p {
   color: var(--hero-secondary-text-color);
   font-size: var(--hero-secondary-text-font-size);
+}
+
+.section-hero .hero-left h1 {
+  color: var(--hero-primary-heading-color);
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 0;
 }
 
 /* Features Section */
