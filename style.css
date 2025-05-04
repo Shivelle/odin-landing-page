@@ -62,13 +62,14 @@ header {
   --header-secondary-text-color: #E5E7EB;
   --header-logo-font-size: 24px;
   --navbar-link-gap: 0.5rem;
+  --navbar-padding: var(--section-padding);
 }
 
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--padding);
+  padding: var(--navbar-padding);
 }
 
 .navbar a {
